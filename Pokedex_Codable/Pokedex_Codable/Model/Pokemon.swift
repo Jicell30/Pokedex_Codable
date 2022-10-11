@@ -9,12 +9,15 @@ import Foundation
 
 // Top level dictionary
 struct Pokedex: Decodable {
-    let results: [Pokemon]
+    let results: [PokemonResult]
     
 }
 
-struct Pokemon: Decodable {
+struct PokemonResult: Decodable {
     let name: String
     let url: String
+    
+}
+struct Pokemon: Decodable {
     
 }
